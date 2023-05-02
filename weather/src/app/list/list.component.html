@@ -1,0 +1,5 @@
+<div class="list">
+<!-- <ng-template ngFor="let data of dataObject"> -->
+<app-list-sub  *ngFor="let data of dataTable" [dateName]="data.dateName" [dateAbbr]="data.dateAbbr" [temp]="data.temp" [condition]="data.condition"></app-list-sub>
+<!-- </ng-template> -->
+</div>

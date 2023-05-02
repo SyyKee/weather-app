@@ -1,0 +1,31 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+<input name="country" type="text" ngModel>
+<button>send</button>
+</form>
+<div class="main">
+    <div class="content-container">
+      <div class="content1"> <h1>{{location}}</h1> <h2>{{conditon}}</h2></div>
+      <div class="content2">
+        <div class="content21">
+            <img style="height: 50;width: 120%;"src="../assets/weather-icons-master/design/line/animation-ready/{{conditon}}.svg" alt="ggggg">
+        </div>
+        <div class="content22">
+          <div class="para1">
+            <p class="header">{{temp}}°C</p>
+          </div>
+          <div class="para2">
+            <p class="sub">{{l_temp}}°C</p>
+          </div>
+          <div class="para3">
+            <p class="sub">{{h_temp}}°C</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="subcontent"><hr>
+      <app-list [country]="country"></app-list>
+
+    </div>
+    
+</div>
